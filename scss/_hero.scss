@@ -1,0 +1,39 @@
+@import "_variables.scss";
+
+.hero {
+	background-color: $lightGray;
+	.hero_image {
+		position: relative;
+		background-image: url("../images/bg-intro-desktop.svg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		min-height: 350px;
+
+		&::before {
+			content: "";
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			background-image: url("../images/image-mockups.png");
+			background-size: 85%;
+			background-repeat: no-repeat;
+			background-position: center bottom; //Horizontal + Vertical
+			min-height: 280px;
+		}
+	}
+
+	.hero_text {
+		text-align: center;
+		h1 {
+			font-weight: 300;
+			color: $darkBlue;
+		}
+		p {
+			line-height: 30px;
+		}
+	}
+	button {
+		margin-bottom: 10px;
+	}
+}

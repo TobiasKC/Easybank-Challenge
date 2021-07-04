@@ -1,0 +1,27 @@
+@import "_variables.scss";
+
+h3 {
+	font-weight: 300;
+	color: $darkBlue;
+}
+
+.feature_grid {
+	display: flex;
+
+	.feature_item {
+		flex: 1;
+		padding: 15px;
+	}
+
+	.feature_icon {
+		margin-bottom: 22px;
+	}
+	.feature_title {
+		color: $darkBlue;
+		margin-bottom: 22px;
+	}
+
+	p {
+		font-size: 16px;
+	}
+}

@@ -1,0 +1,64 @@
+@import "_variables.scss";
+
+.articles {
+	background-color: $lightGray;
+
+	h2 {
+		color: $darkBlue;
+		margin-left: 5px;
+	}
+
+	.article_item {
+		border-radius: 5px;
+		overflow: hidden;
+		margin: 5px;
+		box-shadow: 0px 0px 0px black;
+	}
+	.article_author {
+		margin-bottom: 10px;
+		font-size: 10px;
+	}
+	.article_text {
+		background-color: $White;
+		padding: 30px;
+		margin-bottom: 5px;
+	}
+
+	.article_title {
+		font-size: 26px;
+		color: $darkBlue;
+		margin-bottom: 5px;
+	}
+
+	.article_description {
+		font-size: 13px;
+	}
+}
+
+.article_grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.article_image {
+	height: 200px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.currency {
+	background-image: url("../images/image-currency.jpg");
+}
+
+.dinner {
+	background-image: url("../images/image-restaurant.jpg");
+}
+
+.plane {
+	background-image: url("../images/image-plane.jpg");
+}
+
+.confetti {
+	background-image: url("../images/image-confetti.jpg");
+}
